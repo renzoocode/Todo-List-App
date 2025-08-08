@@ -1,0 +1,159 @@
+/* Global styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.App-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  font-size: 2rem;
+  color: #1f2937;
+}
+
+/* Form styling */
+.add-todo-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-todo-form input[type="text"],
+.add-todo-form input[type="date"],
+.add-todo-form select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1 1 auto;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.todo-main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 1.1rem;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Extra info */
+.todo-info {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.priority {
+  font-weight: bold;
+}
+
+.priority-high {
+  color: #dc2626;
+}
+
+.priority-medium {
+  color: #d97706;
+}
+
+.priority-low {
+  color: #16a34a;
+}
+
+.due-date {
+  color: #2563eb;
+}
+
+.category {
+  color: #6b7280;
+}
+
+/* Stats */
+.todo-stats {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* Empty message */
+.no-todos {
+  text-align: center;
+  color: #9ca3af;
+  font-style: italic;
+}
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 15px;
+}
